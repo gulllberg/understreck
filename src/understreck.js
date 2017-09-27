@@ -8,6 +8,8 @@ functions.reject = lodash.reject;
 // Object
 functions.extend = lodash.extend;
 functions.values = lodash.values;
+functions.keys = lodash.keys;
+functions.size = lodash.size;
 
 // Misc
 function s4() {
