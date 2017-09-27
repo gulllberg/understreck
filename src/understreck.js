@@ -1,15 +1,26 @@
 var lodash = require('lodash');
 var functions = {};
 
-// Collections
-functions.find = lodash.find;
-functions.reject = lodash.reject;
-
 // Object
 functions.extend = lodash.extend;
 functions.values = lodash.values;
 functions.keys = lodash.keys;
 functions.size = lodash.size;
+
+// Collections
+functions.find = lodash.find;
+functions.reject = lodash.reject;
+functions.containsValue = function (collection, element) {
+    if (collection.indexOf) {
+        return collection.indexOf(element) !== -1;
+    }
+    else {
+        return functions.containsValue(functions.values(collection), element);
+    }
+};
+functions.containsKey = function (collection, element) {
+    return functions.containsValue(Object.keys(collection), element);
+};
 
 // Misc
 function s4() {
