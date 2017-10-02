@@ -8,8 +8,10 @@ functions.keys = lodash.keys;
 functions.size = lodash.size;
 
 // Collections
+functions.clone = lodash.cloneDeep;
 functions.find = lodash.find;
 functions.reject = lodash.reject;
+
 functions.containsValue = function (collection, element) {
     if (collection.indexOf) {
         return collection.indexOf(element) !== -1;

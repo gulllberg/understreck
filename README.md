@@ -9,6 +9,7 @@
 **size**: See [lodash](http://lodash.com/docs/4.17.4#size)  
 
 ###  Collections
+**clone**: See [lodash](http://lodash.com/docs/4.17.4#cloneDeep)  
 **find**: See [lodash](http://lodash.com/docs/4.17.4#assignIn)  
 **reject**: See [lodash](http://lodash.com/docs/4.17.4#reject)  
 **containsValue**: \[collection, element\] Returns true if the collection has element as a value, otherwise false   

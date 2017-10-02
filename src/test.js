@@ -10,6 +10,15 @@ describe('Understreck - Object', function () {
 });
 
 describe('Understreck - Collections', function () {
+    it('clone', function () {
+       var a = [{korv: "paj"}];
+       var b = _.clone(a);
+
+       b[0].korv = "fisk";
+
+       expect(a[0].korv).toEqual("paj");
+    });
+
     it('containsValue', function () {
         var list = [1, 2, 3];
         expect(_.containsValue(list, 3)).toEqual(true);
