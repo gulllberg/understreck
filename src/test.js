@@ -1,5 +1,15 @@
 var _ = require('./understreck');
 
+describe('Understreck - Array', function () {
+    it('difference', function () {
+        expect(_.difference([1, 2, 3], [1], [2])).toEqual([3]);
+    });
+
+    it('distinct', function () {
+        expect(_.distinct([1, 1, 3])).toEqual([1, 3]);
+    });
+});
+
 describe('Understreck - Object', function () {
     it('extend', function () {
         var obj1 = {};
@@ -11,12 +21,12 @@ describe('Understreck - Object', function () {
 
 describe('Understreck - Collections', function () {
     it('clone', function () {
-       var a = [{korv: "paj"}];
-       var b = _.clone(a);
+        var a = [{korv: "paj"}];
+        var b = _.clone(a);
 
-       b[0].korv = "fisk";
+        b[0].korv = "fisk";
 
-       expect(a[0].korv).toEqual("paj");
+        expect(a[0].korv).toEqual("paj");
     });
 
     it('containsValue', function () {

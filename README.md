@@ -1,6 +1,10 @@
 # understreck
 
-##### Lightweight Javascript utility functions library without global dependency. Based on lodash.
+**Lightweight Javascript utility functions library without global dependency. Based on lodash.**
+
+### Array
+**difference**: See [lodash](http://lodash.com/docs/4.17.4#difference)  
+**distinct**: See [lodash](http://lodash.com/docs/4.17.4#uniq)
 
 ### Object
 **extend**: See [lodash](http://lodash.com/docs/4.17.4#extend)  

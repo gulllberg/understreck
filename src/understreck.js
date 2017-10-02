@@ -1,6 +1,10 @@
 var lodash = require('lodash');
 var functions = {};
 
+// Array
+functions.difference = lodash.difference;
+functions.distinct = lodash.uniq;
+
 // Object
 functions.extend = lodash.extend;
 functions.values = lodash.values;
