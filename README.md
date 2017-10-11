@@ -2,6 +2,9 @@
 
 **Lightweight Javascript utility functions library without global dependency. Based on lodash.**
 
+###Functions
+**not**: See [lodash](http://lodash.com/docs/4.17.4#negate)
+
 ### Array
 **difference**: See [lodash](http://lodash.com/docs/4.17.4#difference)  
 **distinct**: See [lodash](http://lodash.com/docs/4.17.4#uniq)

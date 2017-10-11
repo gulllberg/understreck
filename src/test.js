@@ -1,5 +1,21 @@
 var _ = require('./understreck');
 
+describe('Understreck - Function', function () {
+    it('not', function () {
+        function isEven(v) {
+            return v % 2 === 0;
+        }
+
+        var isOdd = _.not(isEven);
+
+        expect(isEven(2)).toEqual(true);
+        expect(isOdd(2)).toEqual(false);
+        expect(isOdd(1)).toEqual(true);
+        expect(_.not(isOdd)(1)).toEqual(false);
+        expect(_.not(isOdd)(2)).toEqual(true);
+    })
+});
+
 describe('Understreck - Array', function () {
     it('difference', function () {
         expect(_.difference([1, 2, 3], [1], [2])).toEqual([3]);

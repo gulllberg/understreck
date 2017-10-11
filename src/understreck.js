@@ -1,6 +1,9 @@
 var lodash = require('lodash');
 var functions = {};
 
+// Functions
+functions.not = lodash.negate;
+
 // Array
 functions.difference = lodash.difference;
 functions.distinct = lodash.uniq;
