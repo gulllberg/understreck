@@ -26,12 +26,17 @@ describe('Understreck - Array', function () {
     });
 });
 
-describe('Understreck - Object', function () {
+describe('Understreck - Object/Map', function () {
     it('extend', function () {
         var obj1 = {};
         var obj2 = {a: 1, b: 2};
         expect(_.extend(obj1, obj2)).toEqual({a: 1, b: 2});
         expect(obj1).toEqual({a: 1, b: 2});
+    });
+
+    it('createMap', function () {
+        var obj1 = _.createMap("foo", 123, "bar", 987);
+        expect(obj1).toEqual({"foo": 123, "bar": 987});
     });
 });
 

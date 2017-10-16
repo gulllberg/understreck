@@ -8,11 +8,18 @@ functions.not = lodash.negate;
 functions.difference = lodash.difference;
 functions.distinct = lodash.uniq;
 
-// Object
+// Object / Map
 functions.extend = lodash.extend;
 functions.values = lodash.values;
 functions.keys = lodash.keys;
 functions.size = lodash.size;
+functions.createMap = function () {
+    var map = {};
+    for (var i = 0; i < arguments.length; i += 2) {
+        map[arguments[i]] = arguments[i + 1];
+    }
+    return map;
+};
 
 // Collections
 functions.clone = lodash.cloneDeep;
