@@ -9,11 +9,12 @@
 **difference**: See [lodash](http://lodash.com/docs/4.17.4#difference)  
 **distinct**: See [lodash](http://lodash.com/docs/4.17.4#uniq)
 
-### Object
+### Object/Map
 **extend**: See [lodash](http://lodash.com/docs/4.17.4#extend)  
 **values**: See [lodash](http://lodash.com/docs/4.17.4#values)  
 **keys**: See [lodash](http://lodash.com/docs/4.17.4#keys)  
 **size**: See [lodash](http://lodash.com/docs/4.17.4#size)  
+**createMap**: [k1, v1, k2, v2, ...] Creates a map with the given key value pairs.
 
 ###  Collections
 **clone**: See [lodash](http://lodash.com/docs/4.17.4#cloneDeep)  
