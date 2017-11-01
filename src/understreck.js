@@ -25,6 +25,7 @@ functions.createMap = function () {
 functions.clone = lodash.cloneDeep;
 functions.find = lodash.find;
 functions.reject = lodash.reject;
+functions.sortBy = lodash.sortBy;
 
 functions.containsValue = function (collection, element) {
     if (collection.indexOf) {

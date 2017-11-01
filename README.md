@@ -19,7 +19,8 @@
 ###  Collections
 **clone**: See [lodash](http://lodash.com/docs/4.17.4#cloneDeep)  
 **find**: See [lodash](http://lodash.com/docs/4.17.4#assignIn)  
-**reject**: See [lodash](http://lodash.com/docs/4.17.4#reject)  
+**reject**: See [lodash](http://lodash.com/docs/4.17.4#reject)
+**sortBy**: See [lodash](http://lodash.com/docs/4.17.4#sortBy)  
 **containsValue**: \[collection, element\] Returns true if the collection has element as a value, otherwise false   
 **containsKey**: \[collection, element\] Returns true if the collection has element as a key, otherwise false  
 
