@@ -10,7 +10,7 @@
 **distinct**: See [lodash](http://lodash.com/docs/4.17.4#uniq)
 
 ### Object/Map
-**extend**: See [lodash](http://lodash.com/docs/4.17.4#extend)  
+**extend**: See [lodash](http://lodash.com/docs/4.17.4#assignIn)  
 **values**: See [lodash](http://lodash.com/docs/4.17.4#values)  
 **keys**: See [lodash](http://lodash.com/docs/4.17.4#keys)  
 **size**: See [lodash](http://lodash.com/docs/4.17.4#size)  
@@ -18,7 +18,7 @@
 
 ###  Collections
 **clone**: See [lodash](http://lodash.com/docs/4.17.4#cloneDeep)  
-**find**: See [lodash](http://lodash.com/docs/4.17.4#assignIn)  
+**find**: See [lodash](http://lodash.com/docs/4.17.4#find)  
 **reject**: See [lodash](http://lodash.com/docs/4.17.4#reject)
 **sortBy**: See [lodash](http://lodash.com/docs/4.17.4#sortBy)  
 **containsValue**: \[collection, element\] Returns true if the collection has element as a value, otherwise false   
