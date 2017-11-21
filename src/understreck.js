@@ -49,5 +49,6 @@ var counter = 0;
 functions.uniqueId = function (prefix) {
     return prefix ? prefix + '_' + guid + '_' + counter++ : guid + '_' + counter++;
 };
+functions.isEqual = lodash.isEqual;
 
 module.exports = functions;

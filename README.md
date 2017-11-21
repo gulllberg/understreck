@@ -25,4 +25,5 @@
 **containsKey**: \[collection, element\] Returns true if the collection has element as a key, otherwise false  
 
 ### Misc
+**isEqual**: See [lodash](http://lodash.com/docs/4.17.4#isEqual)
 **uniqueId**: \[*optional* prefix\] Returns a (hopefully) unique id, based on uuid principles.
