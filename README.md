@@ -8,6 +8,7 @@
 ### Array
 **difference**: See [lodash](http://lodash.com/docs/4.17.4#difference)  
 **distinct**: See [lodash](http://lodash.com/docs/4.17.4#uniq)
+**isArray**: See [lodash](http://lodash.com/docs/4.17.4#isArray)
 
 ### Object/Map
 **extend**: See [lodash](http://lodash.com/docs/4.17.4#assignIn)  

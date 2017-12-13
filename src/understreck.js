@@ -7,6 +7,7 @@ functions.not = lodash.negate;
 // Array
 functions.difference = lodash.difference;
 functions.distinct = lodash.uniq;
+functions.isArray = lodash.isArray;
 
 // Object / Map
 functions.extend = lodash.extend;
