@@ -7,13 +7,14 @@ functions.not = lodash.negate;
 // Array
 functions.difference = lodash.difference;
 functions.distinct = lodash.uniq;
-functions.isArray = lodash.isArray;
 
 // Object / Map
 functions.extend = lodash.extend;
-functions.values = lodash.values;
 functions.keys = lodash.keys;
+functions.merge = lodash.merge;
 functions.size = lodash.size;
+functions.values = lodash.values;
+
 functions.createMap = function () {
     var map = {};
     for (var i = 0; i < arguments.length; i += 2) {
@@ -25,6 +26,7 @@ functions.createMap = function () {
 // Collections
 functions.clone = lodash.cloneDeep;
 functions.find = lodash.find;
+functions.map = lodash.map;
 functions.reject = lodash.reject;
 functions.sortBy = lodash.sortBy;
 
@@ -39,6 +41,20 @@ functions.containsValue = function (collection, element) {
 functions.containsKey = function (collection, element) {
     return functions.containsValue(Object.keys(collection), element);
 };
+
+// Lang
+functions.isArray = lodash.isArray;
+functions.isBoolean = lodash.isBoolean;
+functions.isDate = lodash.isDate;
+functions.isElement = lodash.isElement;
+functions.isEmpty = lodash.isEmpty;
+functions.isEqual = lodash.isEqual;
+functions.isFunction = lodash.isFunction;
+functions.isInteger = lodash.isInteger;
+functions.isNumber = lodash.isNumber;
+functions.isObject = lodash.isObject;
+functions.isRegExp = lodash.isRegExp;
+functions.isString = lodash.isString;
 
 // Misc
 function s4() {
