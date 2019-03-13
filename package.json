@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/gulllberg/understreck#readme",
   "dependencies": {
-    "lodash": "4.17.4"
+    "lodash": "~4.17.4"
   },
   "devDependencies": {
     "jasmine": "2.8.0"
