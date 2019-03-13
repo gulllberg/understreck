@@ -22,6 +22,7 @@
 **find**: See [lodash](http://lodash.com/docs/4.17.4#find)  
 **map**: See [lodash](http://lodash.com/docs/4.17.4#map)    
 **reject**: See [lodash](http://lodash.com/docs/4.17.4#reject)  
+**shuffle**: See [lodash](http://lodash.com/docs/4.17.4#shuffle)    
 **sortBy**: See [lodash](http://lodash.com/docs/4.17.4#sortBy)  
 **containsValue**: \[collection, element\] Returns true if the collection has element as a value, otherwise false   
 **containsKey**: \[collection, element\] Returns true if the collection has element as a key, otherwise false  
@@ -39,6 +40,8 @@
 **isObject**: See [lodash](http://lodash.com/docs/4.17.4#isObject)  
 **isRegExp**: See [lodash](http://lodash.com/docs/4.17.4#isRegExp)  
 **isString**: See [lodash](http://lodash.com/docs/4.17.4#isString)  
+**isFinite**: See [lodash](http://lodash.com/docs/4.17.4#isFinite)  
+**isNil**: See [lodash](http://lodash.com/docs/4.17.4#isNil)  
 
 ### Misc
 **isEqual**: See [lodash](http://lodash.com/docs/4.17.4#isEqual)  

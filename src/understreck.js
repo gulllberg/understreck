@@ -28,6 +28,7 @@ functions.clone = lodash.cloneDeep;
 functions.find = lodash.find;
 functions.map = lodash.map;
 functions.reject = lodash.reject;
+functions.shuffle = lodash.shuffle;
 functions.sortBy = lodash.sortBy;
 
 functions.containsValue = function (collection, element) {
@@ -55,6 +56,8 @@ functions.isNumber = lodash.isNumber;
 functions.isObject = lodash.isObject;
 functions.isRegExp = lodash.isRegExp;
 functions.isString = lodash.isString;
+functions.isFinite = lodash.isFinite;
+functions.isNil = lodash.isNil;
 
 // Misc
 function s4() {
