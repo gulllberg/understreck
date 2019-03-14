@@ -36,11 +36,10 @@
 **isEqual**: See [lodash](http://lodash.com/docs/4.17.4#isEqual)  
 **isFunction**: See [lodash](http://lodash.com/docs/4.17.4#isFunction)  
 **isInteger**: See [lodash](http://lodash.com/docs/4.17.4#isInteger)  
-**isNumber**: See [lodash](http://lodash.com/docs/4.17.4#isNumber)  
+**isNumber**: See [lodash](http://lodash.com/docs/4.17.4#isFinite)  
 **isObject**: See [lodash](http://lodash.com/docs/4.17.4#isObject)  
 **isRegExp**: See [lodash](http://lodash.com/docs/4.17.4#isRegExp)  
 **isString**: See [lodash](http://lodash.com/docs/4.17.4#isString)  
-**isFinite**: See [lodash](http://lodash.com/docs/4.17.4#isFinite)  
 **isNil**: See [lodash](http://lodash.com/docs/4.17.4#isNil)  
 
 ### Misc

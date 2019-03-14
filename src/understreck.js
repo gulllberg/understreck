@@ -52,11 +52,10 @@ functions.isEmpty = lodash.isEmpty;
 functions.isEqual = lodash.isEqual;
 functions.isFunction = lodash.isFunction;
 functions.isInteger = lodash.isInteger;
-functions.isNumber = lodash.isNumber;
+functions.isNumber = lodash.isFinite;
 functions.isObject = lodash.isObject;
 functions.isRegExp = lodash.isRegExp;
 functions.isString = lodash.isString;
-functions.isFinite = lodash.isFinite;
 functions.isNil = lodash.isNil;
 
 // Misc
