@@ -58,6 +58,19 @@ functions.isRegExp = lodash.isRegExp;
 functions.isString = lodash.isString;
 functions.isNil = lodash.isNil;
 
+functions.parseNumber = function (number, radix) {
+    if (functions.isString(number)) {
+        if (/^((\d+\.\d*)|(\d*\.\d+))$/.test(number)) {
+            return parseFloat(number);
+        } else if (/^\d+$/.test(number)) {
+            return parseInt(number, radix || 10);
+        }
+    } else {
+        return number;
+    }
+    return null;
+};
+
 // Misc
 function s4() {
     return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(0, 4);

@@ -36,11 +36,12 @@
 **isEqual**: See [lodash](http://lodash.com/docs/4.17.4#isEqual)  
 **isFunction**: See [lodash](http://lodash.com/docs/4.17.4#isFunction)  
 **isInteger**: See [lodash](http://lodash.com/docs/4.17.4#isInteger)  
+**isNil**: See [lodash](http://lodash.com/docs/4.17.4#isNil)  
 **isNumber**: See [lodash](http://lodash.com/docs/4.17.4#isFinite)  
 **isObject**: See [lodash](http://lodash.com/docs/4.17.4#isObject)  
 **isRegExp**: See [lodash](http://lodash.com/docs/4.17.4#isRegExp)  
 **isString**: See [lodash](http://lodash.com/docs/4.17.4#isString)  
-**isNil**: See [lodash](http://lodash.com/docs/4.17.4#isNil)  
+**parseNumber**  Parses the given string to a number. Will return `null` if invalid characters exist.
 
 ### Misc
 **isEqual**: See [lodash](http://lodash.com/docs/4.17.4#isEqual)  

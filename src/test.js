@@ -86,3 +86,18 @@ describe('Understreck - Misc', function () {
         expect(id3).not.toEqual(id4);
     });
 });
+
+describe('Lang', function () {
+    it('parseNumber', function () {
+        expect(_.parseNumber('123')).toEqual(123);
+        expect(_.parseNumber(123)).toEqual(123);
+        expect(_.parseNumber(123.412)).toEqual(123.412);
+        expect(_.parseNumber('123.412')).toEqual(123.412);
+        expect(_.parseNumber('123,412')).toEqual(null);
+        expect(_.parseNumber('1a23,412')).toEqual(null);
+        expect(_.parseNumber('1a23')).toEqual(null);
+        expect(_.parseNumber('')).toEqual(null);
+        expect(_.parseNumber('awdaw')).toEqual(null);
+
+    });
+});
