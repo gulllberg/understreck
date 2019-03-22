@@ -98,6 +98,8 @@ describe('Lang', function () {
         expect(_.parseNumber('1a23')).toEqual(null);
         expect(_.parseNumber('')).toEqual(null);
         expect(_.parseNumber('awdaw')).toEqual(null);
+        expect(_.parseNumber(true)).toEqual(null);
+        expect(_.parseNumber(NaN)).toEqual(null);
 
     });
 });

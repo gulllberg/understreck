@@ -34,8 +34,7 @@ functions.sortBy = lodash.sortBy;
 functions.containsValue = function (collection, element) {
     if (collection.indexOf) {
         return collection.indexOf(element) !== -1;
-    }
-    else {
+    } else {
         return functions.containsValue(functions.values(collection), element);
     }
 };
@@ -58,17 +57,20 @@ functions.isRegExp = lodash.isRegExp;
 functions.isString = lodash.isString;
 functions.isNil = lodash.isNil;
 
-functions.parseNumber = function (number, radix) {
-    if (functions.isString(number)) {
-        if (/^((\d+\.\d*)|(\d*\.\d+))$/.test(number)) {
-            return parseFloat(number);
-        } else if (/^\d+$/.test(number)) {
-            return parseInt(number, radix || 10);
+functions.parseNumber = function (value, radix) {
+    if (functions.isString(value)) {
+        if (/^((\d+\.\d*)|(\d*\.\d+))$/.test(value)) {
+            return parseFloat(value);
+        } else if (/^\d+$/.test(value)) {
+            return parseInt(value, radix || 10);
+        } else {
+            return null;
         }
+    } else if (functions.isNumber(value)) {
+        return value;
     } else {
-        return number;
+        return null;
     }
-    return null;
 };
 
 // Misc
