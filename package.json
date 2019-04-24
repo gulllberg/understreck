@@ -1,6 +1,6 @@
 {
   "name": "understreck",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Lightweight Javascript utility functions library without global dependency. Based on lodash.",
   "main": "src/understreck.js",
   "repository": {
