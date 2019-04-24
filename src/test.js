@@ -76,14 +76,27 @@ describe('Understreck - Collections', function () {
 });
 
 describe('Understreck - Misc', function () {
-    it('uniqueId', function () {
-        var id1 = _.uniqueId();
-        var id2 = _.uniqueId();
-        expect(id1).not.toEqual(id2);
+    describe('uniqueId', function () {
+        it('Modifying unique id should not give a match on another unique id', function () {
+            // This test must be executed before other tests where unique id is used
+            var id1 = _.uniqueId();
+            id1 = _.uniqueId(); // We want unique id where counter is 1
+            var id2 = _.uniqueId();
+            for (var count = 0;count < 9; count++) {
+                id2 = _.uniqueId();
 
-        var id3 = _.uniqueId('prefix');
-        var id4 = _.uniqueId('prefix');
-        expect(id3).not.toEqual(id4);
+            }
+            expect(id1 + '1').not.toEqual(id2);
+        });
+        it('Basic tests', function () {
+            var id1 = _.uniqueId();
+            var id2 = _.uniqueId();
+            expect(id1).not.toEqual(id2);
+
+            var id3 = _.uniqueId('prefix');
+            var id4 = _.uniqueId('prefix');
+            expect(id3).not.toEqual(id4);
+        });
     });
 });
 

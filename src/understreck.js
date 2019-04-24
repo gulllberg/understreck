@@ -2,17 +2,26 @@ var lodash = require('lodash');
 var functions = {};
 
 // Functions
+functions.defer = lodash.defer;
 functions.not = lodash.negate;
+functions.throttle = lodash.throttle;
+functions.wrap = lodash.wrap;
 
 // Array
 functions.difference = lodash.difference;
+functions.differenceBy = lodash.differenceBy;
 functions.distinct = lodash.uniq;
+functions.take = lodash.take;
+functions.union = lodash.union;
 
 // Object / Map
 functions.extend = lodash.extend;
 functions.keys = lodash.keys;
 functions.merge = lodash.merge;
+functions.omit = lodash.omit;
+functions.pick = lodash.pick;
 functions.size = lodash.size;
+functions.transform = lodash.transform;
 functions.values = lodash.values;
 
 functions.createMap = function () {
@@ -25,11 +34,30 @@ functions.createMap = function () {
 
 // Collections
 functions.clone = lodash.cloneDeep;
+functions.compact = lodash.compact;
 functions.find = lodash.find;
+functions.findIndex = lodash.findIndex;
+functions.flatten = lodash.flatten;
+functions.flattenDeep = lodash.flattenDeep;
+functions.forEach = lodash.forEach;
+functions.includes = lodash.includes;
+functions.intersection = lodash.intersection;
+functions.keyBy = lodash.keyBy;
 functions.map = lodash.map;
+functions.reduce = lodash.reduce;
+functions.reduceRight = lodash.reduceRight;
 functions.reject = lodash.reject;
 functions.shuffle = lodash.shuffle;
+functions.some = lodash.some;
 functions.sortBy = lodash.sortBy;
+functions.unique = lodash.uniq;
+
+functions.filter = function (collection, predicate) {
+    if (collection === undefined) {
+        return [];
+    }
+    return collection.filter(predicate);
+};
 
 functions.containsValue = function (collection, element) {
     if (collection.indexOf) {
@@ -38,6 +66,7 @@ functions.containsValue = function (collection, element) {
         return functions.containsValue(functions.values(collection), element);
     }
 };
+
 functions.containsKey = function (collection, element) {
     return functions.containsValue(Object.keys(collection), element);
 };
@@ -51,11 +80,13 @@ functions.isEmpty = lodash.isEmpty;
 functions.isEqual = lodash.isEqual;
 functions.isFunction = lodash.isFunction;
 functions.isInteger = lodash.isInteger;
+functions.isNil = lodash.isNil;
+functions.isNull = lodash.isNull;
 functions.isNumber = lodash.isFinite;
 functions.isObject = lodash.isObject;
 functions.isRegExp = lodash.isRegExp;
 functions.isString = lodash.isString;
-functions.isNil = lodash.isNil;
+functions.isUndefined = lodash.isUndefined;
 
 functions.parseNumber = function (value, radix) {
     if (functions.isString(value)) {
@@ -81,8 +112,7 @@ function s4() {
 var guid = s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
 var counter = 0;
 functions.uniqueId = function (prefix) {
-    return prefix ? prefix + '_' + guid + '_' + counter++ : guid + '_' + counter++;
+    return (prefix ? prefix + '_' + guid + '_' + counter++ : guid + '_' + counter++) + '_';
 };
-functions.isEqual = lodash.isEqual;
 
 module.exports = functions;
