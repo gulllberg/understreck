@@ -35,6 +35,7 @@
 **flattenDeep**: See [lodash](http://lodash.com/docs/4.17.4#flattenDeep)  
 **filter**: [collection, predicate] Returns empty array if collection is undefined, otherwise filters collection using predicate.  
 **forEach**: See [lodash](http://lodash.com/docs/4.17.4#forEach)  
+**get**: See [lodash](http://lodash.com/docs/4.17.4#get)  
 **includes**: See [lodash](http://lodash.com/docs/4.17.4#includes)  
 **intersection**: See [lodash](http://lodash.com/docs/4.17.4#intersection)  
 **keyBy**: See [lodash](http://lodash.com/docs/4.17.4#keyBy)  

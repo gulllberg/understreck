@@ -16,6 +16,7 @@ functions.union = lodash.union;
 
 // Object / Map
 functions.extend = lodash.extend;
+functions.get = lodash.get;
 functions.keys = lodash.keys;
 functions.merge = lodash.merge;
 functions.omit = lodash.omit;
