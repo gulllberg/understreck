@@ -3,6 +3,7 @@
 **Lightweight Javascript utility functions library without global dependency. Based on lodash.**
 
 ### Functions
+**debounce**: See [lodash](http://lodash.com/docs/4.17.5#debounce)  
 **defer**: See [lodash](http://lodash.com/docs/4.17.5#defer)  
 **not**: See [lodash](http://lodash.com/docs/4.17.4#negate)  
 **throttle**: See [lodash](http://lodash.com/docs/4.17.5#throttle)  
@@ -43,8 +44,8 @@
 **reduce**: See [lodash](http://lodash.com/docs/4.17.4#reduce)  
 **reduceRight**: See [lodash](http://lodash.com/docs/4.17.4#reduceRight)  
 **reject**: See [lodash](http://lodash.com/docs/4.17.4#reject)  
-**shuffle**: See [lodash](http://lodash.com/docs/4.17.4#shuffle)    
-**some**: See [lodash](http://lodash.com/docs/4.17.4#some) 
+**shuffle**: See [lodash](http://lodash.com/docs/4.17.4#shuffle)  
+**some**: See [lodash](http://lodash.com/docs/4.17.4#some)  
 **sortBy**: See [lodash](http://lodash.com/docs/4.17.4#sortBy)  
 **unique**: See [lodash](http://lodash.com/docs/4.17.4#uniq)  
 **containsValue**: \[collection, element\] Returns true if the collection has element as a value, otherwise false   
@@ -65,7 +66,7 @@
 **isObject**: See [lodash](http://lodash.com/docs/4.17.4#isObject)  
 **isRegExp**: See [lodash](http://lodash.com/docs/4.17.4#isRegExp)  
 **isString**: See [lodash](http://lodash.com/docs/4.17.4#isString)  
-**isUndefined**: See [lodash](http://lodash.com/docs/4.17.4#isUndefined)
+**isUndefined**: See [lodash](http://lodash.com/docs/4.17.4#isUndefined)  
 **parseNumber**  Parses the given string to a number. Will return `null` if invalid characters exist.
 
 ### Misc

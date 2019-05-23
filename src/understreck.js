@@ -2,6 +2,7 @@ var lodash = require('lodash');
 var functions = {};
 
 // Functions
+functions.debounce = lodash.debounce;
 functions.defer = lodash.defer;
 functions.not = lodash.negate;
 functions.throttle = lodash.throttle;
