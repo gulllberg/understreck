@@ -38,6 +38,20 @@ describe('Understreck - Object/Map', function () {
         var obj1 = _.createMap("foo", 123, "bar", 987);
         expect(obj1).toEqual({"foo": 123, "bar": 987});
     });
+
+    it('merge', function () {
+        // Should not mutate objects
+        var o1 = {
+            a: 1
+        };
+        var o2 = {
+            a: 2
+        };
+        var o3 = _.merge(o1, o2);
+        expect(o1).toEqual({a: 1});
+        expect(o2).toEqual({a: 2});
+        expect(o3).toEqual({a: 2});
+    });
 });
 
 describe('Understreck - Collections', function () {
@@ -82,7 +96,7 @@ describe('Understreck - Misc', function () {
             var id1 = _.uniqueId();
             id1 = _.uniqueId(); // We want unique id where counter is 1
             var id2 = _.uniqueId();
-            for (var count = 0;count < 9; count++) {
+            for (var count = 0; count < 9; count++) {
                 id2 = _.uniqueId();
 
             }

@@ -19,7 +19,10 @@ functions.union = lodash.union;
 functions.extend = lodash.extend;
 functions.get = lodash.get;
 functions.keys = lodash.keys;
-functions.merge = lodash.merge;
+functions.merge = function () {
+    var args = Array.prototype.slice.call(arguments);
+    return lodash.merge.apply(null, [{}].concat(args));
+};
 functions.omit = lodash.omit;
 functions.pick = lodash.pick;
 functions.size = lodash.size;

@@ -19,7 +19,7 @@
 ### Object/Map
 **extend**: See [lodash](http://lodash.com/docs/4.17.4#assignIn)  
 **keys**: See [lodash](http://lodash.com/docs/4.17.4#keys)  
-**merge**: See [lodash](http://lodash.com/docs/4.17.4#merge)  
+**merge**: See [lodash](http://lodash.com/docs/4.17.4#merge), but does not mutate objects.  
 **omit**: See [lodash](http://lodash.com/docs/4.17.4#omit)  
 **pick**: See [lodash](http://lodash.com/docs/4.17.4#pick)  
 **size**: See [lodash](http://lodash.com/docs/4.17.4#size)  
