@@ -1,6 +1,6 @@
 {
   "name": "understreck",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Lightweight Javascript utility functions library without global dependency. Based on lodash.",
   "main": "src/understreck.js",
   "repository": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/gulllberg/understreck#readme",
   "dependencies": {
-    "lodash": "~4.17.4"
+    "lodash": "~4.17.15"
   },
   "devDependencies": {
     "jasmine": "2.8.0"
