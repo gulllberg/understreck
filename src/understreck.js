@@ -14,6 +14,8 @@ functions.differenceBy = lodash.differenceBy;
 functions.distinct = lodash.uniq;
 functions.take = lodash.take;
 functions.union = lodash.union;
+functions.unique = lodash.uniq;
+functions.uniqeBy = lodash.uniqBy;
 
 // Object / Map
 functions.extend = lodash.extend;
@@ -55,7 +57,6 @@ functions.reject = lodash.reject;
 functions.shuffle = lodash.shuffle;
 functions.some = lodash.some;
 functions.sortBy = lodash.sortBy;
-functions.unique = lodash.uniq;
 
 functions.filter = function (collection, predicate) {
     if (collection === undefined) {
