@@ -15,7 +15,7 @@ functions.distinct = lodash.uniq;
 functions.take = lodash.take;
 functions.union = lodash.union;
 functions.unique = lodash.uniq;
-functions.uniqeBy = lodash.uniqBy;
+functions.uniqueBy = lodash.uniqBy;
 
 // Object / Map
 functions.extend = lodash.extend;
