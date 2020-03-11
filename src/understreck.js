@@ -20,6 +20,7 @@ functions.uniqueBy = lodash.uniqBy;
 // Object / Map
 functions.extend = lodash.extend;
 functions.get = lodash.get;
+functions.set = lodash.set;
 functions.keys = lodash.keys;
 functions.merge = function () {
     var args = Array.prototype.slice.call(arguments);

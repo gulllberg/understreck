@@ -39,6 +39,7 @@
 **filter**: [collection, predicate] Returns empty array if collection is undefined, otherwise filters collection using predicate.  
 **forEach**: See [lodash](http://lodash.com/docs/4.17.15#forEach)  
 **get**: See [lodash](http://lodash.com/docs/4.17.15#get)  
+**set**: See [lodash](http://lodash.com/docs/4.17.15#set)  
 **includes**: See [lodash](http://lodash.com/docs/4.17.15#includes)  
 **intersection**: See [lodash](http://lodash.com/docs/4.17.15#intersection)  
 **keyBy**: See [lodash](http://lodash.com/docs/4.17.15#keyBy)  
