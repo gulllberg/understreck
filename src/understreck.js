@@ -97,9 +97,9 @@ functions.isUndefined = lodash.isUndefined;
 
 functions.parseNumber = function (value, radix) {
     if (functions.isString(value)) {
-        if (/^((\d+\.\d*)|(\d*\.\d+))$/.test(value)) {
+        if (/^-?((\d+\.\d*)|(\d*\.\d+))$/.test(value)) {
             return parseFloat(value);
-        } else if (/^\d+$/.test(value)) {
+        } else if (/^-?\d+$/.test(value)) {
             return parseInt(value, radix || 10);
         } else {
             return null;
